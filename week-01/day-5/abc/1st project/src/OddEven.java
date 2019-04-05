@@ -4,11 +4,7 @@ public class OddEven {
         Scanner OE = new Scanner(System.in);
         System.out.println("Enter Number");
 
-        int OddEven = OE.nextInt();
-        if (OddEven % 2 == 0 ) {
-            System.out.println("Even");
-        }   else {
-            System.out.println("Odd");
-        }
+        int OddEven = OE.nextLine();
+        if (OddEven = )
     }
 }
