@@ -33,5 +33,17 @@ public class Conditionals {
             System.out.println("No food for you, little fatty.");
         }
 
+
+
+        int r = 0;
+        while (r < 10) {
+            System.out.println(r);
+            r += 1;
+        }
+
+        for (int i = 0; i < 100; i++) {
+            System.out.println(i);
+        }
+
     }
 }
