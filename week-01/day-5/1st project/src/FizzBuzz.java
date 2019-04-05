@@ -4,14 +4,14 @@ public class FizzBuzz {
             if (a % 3 != 0 && a % 5 != 0) {
                 System.out.println(a);
             }
-            if (a % 3 == 0) {
+            else if (a % 3 == 0 && a % 5 == 0) {
+                System.out.println("FizzBuzz");
+            }
+            else if (a % 3 == 0) {
                 System.out.println("Fizz");
             }
-            if (a % 5 == 0) {
+            else if (a % 5 == 0) {
                 System.out.println("Buzz");
-            }
-            if (a % 3 == 0 && a % 5 == 0) {
-                System.out.println("FizzBuzz");
             }
         }
     }
