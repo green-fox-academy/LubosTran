@@ -81,11 +81,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CompareLength.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/SumElements.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -109,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/Factorio.java" />
         <option value="$PROJECT_DIR$/src/Third.java" />
         <option value="$PROJECT_DIR$/src/CompareLength.java" />
+        <option value="$PROJECT_DIR$/src/SumElements.java" />
       </list>
     </option>
   </component>
@@ -161,14 +171,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CompareLength">
-    <configuration name="AppendAFunc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AppendAFunc" />
-      <module name="Array and shiet" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SumElements">
     <configuration name="CompareLength" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CompareLength" />
       <module name="Array and shiet" />
@@ -190,6 +193,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SumElements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SumElements" />
+      <module name="Array and shiet" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Third" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Third" />
       <module name="Array and shiet" />
@@ -199,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SumElements" />
         <item itemvalue="Application.CompareLength" />
         <item itemvalue="Application.Third" />
         <item itemvalue="Application.Factorio" />
         <item itemvalue="Application.Sum" />
-        <item itemvalue="Application.AppendAFunc" />
       </list>
     </recent_temporary>
   </component>
@@ -217,12 +227,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554718109447</updated>
-      <workItem from="1554718114250" duration="11434000" />
+      <workItem from="1554718114250" duration="11992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11434000" />
+    <option name="totallyTimeSpent" value="11992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="802" y="0" width="1113" height="1047" extended-state="0" />
@@ -233,7 +243,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24976258" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24976258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32932165" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -243,7 +253,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3129103" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3129103" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -321,6 +331,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SumElements.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
         </state>
       </provider>
     </entry>
