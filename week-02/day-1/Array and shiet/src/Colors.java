@@ -7,5 +7,15 @@
 // - In `colors[2]` store the shades of pink:
 //   `"orchid", "violet", "pink", "hot pink"`
 public class Colors {
-//    public static void main()
+    public static void main(String[]args){
+        String [][] colors = {
+                {"lime", "forest green", "olive", "pale green", "spring green"},
+                {"orange red", "red", "tomato"},
+                {"orchid", "violet", "pink", "hot pink"}
+        };
+        System.out.println(colors[0][3]);
+
+
+    }
+
 }
