@@ -72,20 +72,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ListIntroduction1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="85">
+              <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MapIntroduction1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="36" />
+              <folding>
+                <element signature="e#151#167#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MapIntroduction1.java">
+        <entry file="file://$PROJECT_DIR$/src/ListIntro2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="453">
-              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+            <state relative-caret-position="408">
+              <caret line="24" column="62" lean-forward="true" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
               <folding>
-                <element signature="e#151#167#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MapIntro2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -107,8 +128,10 @@
         <option value="$PROJECT_DIR$/src/TakeLonger.java" />
         <option value="$PROJECT_DIR$/src/TodoPrint.java" />
         <option value="$PROJECT_DIR$/src/Reverse.java" />
-        <option value="$PROJECT_DIR$/src/ListIntroduction1.java" />
         <option value="$PROJECT_DIR$/src/MapIntroduction1.java" />
+        <option value="$PROJECT_DIR$/src/ListIntroduction1.java" />
+        <option value="$PROJECT_DIR$/src/ListIntro2.java" />
+        <option value="$PROJECT_DIR$/src/MapIntro2.java" />
       </list>
     </option>
   </component>
@@ -161,9 +184,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MapIntroduction1">
+  <component name="RunManager" selected="Application.ListIntro2">
+    <configuration name="ListIntro2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ListIntro2" />
+      <module name="StringAndArraysList" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ListIntroduction1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ListIntroduction1" />
+      <module name="StringAndArraysList" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapIntro2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MapIntro2" />
       <module name="StringAndArraysList" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,20 +215,6 @@
     </configuration>
     <configuration name="Reverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Reverse" />
-      <module name="StringAndArraysList" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TakeLonger" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TakeLonger" />
-      <module name="StringAndArraysList" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TodoPrint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TodoPrint" />
       <module name="StringAndArraysList" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -246,11 +269,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ListIntro2" />
         <item itemvalue="Application.MapIntroduction1" />
+        <item itemvalue="Application.MapIntro2" />
         <item itemvalue="Application.ListIntroduction1" />
         <item itemvalue="Application.Reverse" />
-        <item itemvalue="Application.TodoPrint" />
-        <item itemvalue="Application.TakeLonger" />
       </list>
     </recent_temporary>
   </component>
@@ -264,12 +287,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554801724966</updated>
-      <workItem from="1554801737317" duration="17957000" />
+      <workItem from="1554801737317" duration="23122000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17957000" />
+    <option name="totallyTimeSpent" value="23122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="802" y="0" width="1113" height="1047" extended-state="0" />
@@ -361,17 +384,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ListIntroduction1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="85">
+          <caret line="5" column="51" lean-forward="true" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MapIntroduction1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        <state relative-caret-position="391">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="36" />
           <folding>
             <element signature="e#151#167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MapIntro2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ListIntro2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="62" lean-forward="true" selection-start-line="24" selection-start-column="62" selection-end-line="24" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
