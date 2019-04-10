@@ -66,8 +66,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HorizontalLines.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="238">
+              <caret line="14" column="64" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CenteredSquare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,10 +88,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/CenteredSquare.java">
+        <entry file="file://$PROJECT_DIR$/src/FourRectangles.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            <state relative-caret-position="187">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -105,6 +117,7 @@
         <option value="$PROJECT_DIR$/src/ToTheCenter.java" />
         <option value="$PROJECT_DIR$/src/HorizontalLines.java" />
         <option value="$PROJECT_DIR$/src/CenteredSquare.java" />
+        <option value="$PROJECT_DIR$/src/FourRectangles.java" />
       </list>
     </option>
   </component>
@@ -156,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CenteredSquare">
+  <component name="RunManager" selected="Application.FourRectangles">
     <configuration name="CenteredSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CenteredSquare" />
       <module name="Graphics" />
@@ -164,15 +177,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ColoredBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ColoredBox" />
+    <configuration name="Diagonals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Diagonals" />
       <module name="Graphics" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Diagonals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Diagonals" />
+    <configuration name="FourRectangles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="FourRectangles" />
       <module name="Graphics" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -194,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FourRectangles" />
         <item itemvalue="Application.CenteredSquare" />
         <item itemvalue="Application.HorizontalLines" />
         <item itemvalue="Application.ToTheCenter" />
         <item itemvalue="Application.Diagonals" />
-        <item itemvalue="Application.ColoredBox" />
       </list>
     </recent_temporary>
   </component>
@@ -212,12 +225,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554889056118</updated>
-      <workItem from="1554889065165" duration="12200000" />
+      <workItem from="1554889065165" duration="16624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12200000" />
+    <option name="totallyTimeSpent" value="16624000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="802" y="0" width="1113" height="1047" extended-state="0" />
@@ -230,7 +243,7 @@
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24976258" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32932165" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
@@ -300,8 +313,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HorizontalLines.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="238">
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -310,8 +323,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CenteredSquare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="170">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FourRectangles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
