@@ -63,11 +63,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HorizontalLines.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
               <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/CenteredSquare.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,6 +104,7 @@
         <option value="$PROJECT_DIR$/src/LineInTheMiddle.java" />
         <option value="$PROJECT_DIR$/src/ToTheCenter.java" />
         <option value="$PROJECT_DIR$/src/HorizontalLines.java" />
+        <option value="$PROJECT_DIR$/src/CenteredSquare.java" />
       </list>
     </option>
   </component>
@@ -143,7 +156,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HorizontalLines">
+  <component name="RunManager" selected="Application.CenteredSquare">
+    <configuration name="CenteredSquare" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CenteredSquare" />
+      <module name="Graphics" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ColoredBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ColoredBox" />
       <module name="Graphics" />
@@ -165,13 +185,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LineInTheMiddle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="LineInTheMiddle" />
-      <module name="Graphics" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ToTheCenter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ToTheCenter" />
       <module name="Graphics" />
@@ -181,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CenteredSquare" />
         <item itemvalue="Application.HorizontalLines" />
         <item itemvalue="Application.ToTheCenter" />
         <item itemvalue="Application.Diagonals" />
         <item itemvalue="Application.ColoredBox" />
-        <item itemvalue="Application.LineInTheMiddle" />
       </list>
     </recent_temporary>
   </component>
@@ -199,12 +212,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554889056118</updated>
-      <workItem from="1554889065165" duration="11939000" />
+      <workItem from="1554889065165" duration="12200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11939000" />
+    <option name="totallyTimeSpent" value="12200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="802" y="0" width="1113" height="1047" extended-state="0" />
@@ -289,6 +302,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CenteredSquare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
