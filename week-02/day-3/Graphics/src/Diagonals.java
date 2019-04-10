@@ -4,23 +4,21 @@ import java.awt.*;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
-public class LineInTheMiddle {
-    public static void mainDraw(Graphics graphics){
-        // draw a red horizontal line to the canvas' middle.
-        // draw a green vertical line to the canvas' middle.
-
-            graphics.drawRect(0,0, WIDTH,HEIGHT);
-            graphics.setColor(new Color(204, 24, 28));
-            graphics.drawLine(0,500,1000,500);
-            graphics.setColor(new Color(32, 239, 24));
-            graphics.drawLine(500, 0, 500, 1000);
+public class Diagonals {
+    public static void mainDraw(Graphics graphics) {
+        // Draw the canvas' diagonals.
+        // If it starts from the upper-left corner it should be green, otherwise it should be red.
+        graphics.setColor(Color.GREEN);
+        graphics.drawLine(0,0,1000,1000);
+        graphics.setColor(Color.red);
+        graphics.drawLine(1000,0,0,1000);
 
 
     }
 
     // Don't touch the code below
-    static int WIDTH = 1000;
-    static int HEIGHT = 1000;
+    static int WIDTH = 320;
+    static int HEIGHT = 320;
 
     public static void main(String[] args) {
         JFrame jFrame = new JFrame("Drawing");
