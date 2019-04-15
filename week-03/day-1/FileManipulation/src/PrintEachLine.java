@@ -16,8 +16,8 @@ public class PrintEachLine {
         try { // Required by Files.readAllLines(filePath);
             Path filePath = Paths.get("assets/my-file.txt");
             List<String> lines = Files.readAllLines(filePath);
-            for (String fcktheguywritethisinstruction : lines)
-            System.out.println(fcktheguywritethisinstruction);
+            for (String fcktheinstruction : lines)
+            System.out.println(fcktheinstruction);
         } catch (Exception e) {
             System.out.println("Uh-oh, could not read the file!");
         }
