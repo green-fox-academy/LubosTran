@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Array and shiet.iml" filepath="$PROJECT_DIR$/Array and shiet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FileManipulation.iml" filepath="$PROJECT_DIR$/FileManipulation.iml" />
     </modules>
   </component>
 </project>

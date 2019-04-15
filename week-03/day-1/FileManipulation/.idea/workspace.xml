@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="758c7c5c-79b8-4638-9d37-0e7ce5943b11" name="Default Changelist" comment="" />
+    <list default="true" id="9dfe1de7-54d4-4eae-8171-3aaa58d62bbc" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,22 +15,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Doubling.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Greet.java">
+        <entry file="file://$PROJECT_DIR$/src/DivideByZero.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+            <state relative-caret-position="51">
+              <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
               <folding>
-                <element signature="e#0#333#0" expanded="true" />
+                <element signature="e#71#72#0" expanded="true" />
+                <element signature="e#104#105#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,14 +40,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Doubling.java" />
-        <option value="$PROJECT_DIR$/src/Greet.java" />
+        <option value="$PROJECT_DIR$/src/DivideByZero.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="802" />
-    <option name="width" value="1113" />
+    <option name="x" value="835" />
+    <option name="width" value="1094" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectView">
@@ -64,28 +55,24 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Array and shiet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Array and shiet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Array and shiet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Array and shiet" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="FileManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FileManipulation" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Sunday" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -101,25 +88,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Greet">
-    <configuration name="Doubling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Doubling" />
-      <module name="Array and shiet" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Greet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Greet" />
-      <module name="Array and shiet" />
+  <component name="RunManager">
+    <configuration name="DivideByZero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DivideByZero" />
+      <module name="FileManipulation" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Greet" />
-        <item itemvalue="Application.Doubling" />
+        <item itemvalue="Application.DivideByZero" />
       </list>
     </recent_temporary>
   </component>
@@ -128,20 +107,20 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="758c7c5c-79b8-4638-9d37-0e7ce5943b11" name="Default Changelist" comment="" />
-      <created>1554718109447</created>
+      <changelist id="9dfe1de7-54d4-4eae-8171-3aaa58d62bbc" name="Default Changelist" comment="" />
+      <created>1555325868145</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554718109447</updated>
-      <workItem from="1554718114250" duration="2803000" />
+      <updated>1555325868145</updated>
+      <workItem from="1555325874524" duration="1686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2803000" />
+    <option name="totallyTimeSpent" value="1686000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="802" y="0" width="1113" height="1047" extended-state="0" />
+    <frame x="835" y="0" width="1094" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -149,9 +128,9 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24976258" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24951644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Messages" weight="0.32932165" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
@@ -159,8 +138,8 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3129103" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32932165" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934355" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -179,19 +158,13 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Doubling.java">
+    <entry file="file://$PROJECT_DIR$/src/DivideByZero.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Greet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        <state relative-caret-position="51">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
           <folding>
-            <element signature="e#0#333#0" expanded="true" />
+            <element signature="e#71#72#0" expanded="true" />
+            <element signature="e#104#105#0" expanded="true" />
           </folding>
         </state>
       </provider>
