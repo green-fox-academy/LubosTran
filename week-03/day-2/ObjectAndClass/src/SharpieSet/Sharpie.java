@@ -1,4 +1,4 @@
-package Sharpie;
+package SharpieSet;
 /*
     Reuse your Sharpie class
     Create SharpieSet class
@@ -19,10 +19,14 @@ public class Sharpie {
     }
 
     public void use (){
-      this.inkAmount = inkAmount-10;
+
+        this.inkAmount = inkAmount-10;
     }
 
-
+    @Override
+    public String toString (){
+        return color +" "+ width;
+    }
 
 }
 
