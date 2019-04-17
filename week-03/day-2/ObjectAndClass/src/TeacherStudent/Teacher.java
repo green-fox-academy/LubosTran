@@ -12,8 +12,8 @@ public class Teacher {
     String name;
     public Teacher(String name){
         this.name = name;
-
     }
+
     public void answer(){}
 
     public void teach(Student student){
