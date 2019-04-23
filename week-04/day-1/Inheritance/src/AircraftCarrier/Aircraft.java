@@ -22,11 +22,10 @@ public class Aircraft {
     }
 
     public int refill(int amount){
-        for (int NmbBullet = 0; NmbBullet < amount; NmbBullet++){
-            if(ammoStorage <= maxAmmo){
-                ammoStorage += NmbBullet;
-                amount -= NmbBullet;
-            }
+        int neededAmount = maxAmmo - ammoStorage;
+        if(ammoStorage < maxAmmo){
+            ammoStorage  = maxAmmo;
+            amount = neededAmount  ;
         }return amount;
     }
 
