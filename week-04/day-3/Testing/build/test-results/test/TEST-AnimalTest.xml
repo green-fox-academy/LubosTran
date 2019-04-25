@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AnimalTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-04-25T14:05:58" hostname="Lubos-Tran" time="0.002">
+  <properties/>
+  <testcase name="thirstDeclining" classname="AnimalTest" time="0.001"/>
+  <testcase name="hungerDeclining" classname="AnimalTest" time="0.0"/>
+  <testcase name="hungerAndThirstDeclining" classname="AnimalTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
