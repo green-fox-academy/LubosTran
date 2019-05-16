@@ -1,0 +1,51 @@
+body {
+
+    font-size: 10px;
+    background-color: #ebebeb;
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+}
+
+form{
+    font-family: Lato;
+    align-self: auto;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    padding: 10px 20px;
+    margin: 10px 20px;
+
+}
+
+input[type=text], input[type=password] {
+
+    outline: none;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 8px;
+}
+
+.focusHere:focus{
+    border-color: #4CAF50;
+}
+button{
+    border-radius: 5px;
+    padding: 3px 10px;
+    font-size: 6px;
+    border: none;
+    color: #E3E3E3;
+    background-color: #1F2328;
+}
+h1{
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: #1F2328;
+}
+
+p{
+    text-align: right;
+}
