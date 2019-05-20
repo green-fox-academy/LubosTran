@@ -41,15 +41,4 @@ public class WebController {
         return "stock";
     }
 
-    @RequestMapping("/mostExpensive")
-    public String displayMostExpensive(Model model){
-        model.addAttribute("text", store.getMostExpensive());
-        return "stock";
-    }
-
-    @RequestMapping(value ="/search")
-    public String displayMostExpensive(Model model){
-        model.addAttribute("text", store.getMostExpensive());
-        return "stock";
-    }
 }
