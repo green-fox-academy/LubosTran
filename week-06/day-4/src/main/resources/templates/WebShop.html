@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <header>My Shop</header>
+    <div class="nav">
+        <a href="/available">Only Available</a>
+        <a href="/cheapest">Cheapest First</a>
+        <a href="/nike">Contains Nike</a>
+        <a href="/avgStock">Average Stock</a>
+        <a href="/mostExpensive">Most Expensive Available</a>
+    </div>
+    <div>
+        <h2>Search for:</h2>
+        <form id="tfnewsearch" method="get" action="{{action('WebController@search'}}}">
+            <input type="text" class="tfextinput" name="q" size="21" max="300"><input type="submit" value="Search" class="tfbutton">
+        </form>
+    </div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Quantity of stock</th>
+        </tr>
+
+        <tr th:each="item : ${items}">
+            <td th:text="${item.getName()}"></td>
+            <td th:text="${item.getDescription()}"></td>
+            <td th:text="${item.getPrice()}"></td>
+            <td th:text="${item.getQuantityOfStock()}"></td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
+
+

@@ -1,6 +1,7 @@
 package foxStuff;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -21,6 +22,7 @@ public class foxStuff {
                 new Fox("fox5","colorful",24),
                 new Fox("fox6","green",2)
         );
+
 
         foxes.stream()
                 .filter( fox -> fox.getColor().toLowerCase().equals("green"))
