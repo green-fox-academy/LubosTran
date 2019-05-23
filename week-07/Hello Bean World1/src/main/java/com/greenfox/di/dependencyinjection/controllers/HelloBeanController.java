@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -18,7 +19,7 @@ import java.util.List;
 public class HelloBeanController {
 
     private UtilityService utilityService;
-    List<String> links = Arrays.asList("/useful/colored", "/useful/email");
+    List<String> links = Arrays.asList("/useful", "/useful/colored", "/useful/email");
 
     @Autowired
     HelloBeanController (UtilityService utilityService){
@@ -52,4 +53,9 @@ public class HelloBeanController {
         return "emailValidator";
     }
 
+    @RequestMapping("/useful/")
+    public String Ceasar (@RequestParam String text, int number, Model model){
+        model.addAttribute("encode", utilityService.caesar(text,number));
+        return "Ceasar";
+    }
 }
