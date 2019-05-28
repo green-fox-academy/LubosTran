@@ -17,7 +17,7 @@ public class Todo {
 
     public Todo(){}
 
-    public Todo(String title) {
+    public Todo(String title, boolean urgent, boolean done) {
         this.id = id;
         this.title = title;
         this.urgent = urgent;
