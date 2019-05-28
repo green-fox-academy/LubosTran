@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" >
+    <title>Test</title>
+</head>
+<body>
+<form>
+    <input type="radio" name="address" value="Mr.">Mr.
+    <input type="radio" name="address" value="Mrs.">Mrs.
+    <input type="radio" name="address" value="Not Specified">Not specified<br>
+    <input type="text" name="First name" placeholder="First Name">
+    <input type="text" name="First name" placeholder="Last Name">
+    <input type="submit" value="Submit">
+</form>
+
+<div >
+    <span th:text="|Hello ${name}|"/>, did you know that <span th:utext="${formatted}"/>
+    is <span th:text="${formatted}"/> in HTML?
+</div>
+
+<p th:if="${shouldRenderResources}"> Nothing to see here</p>
+    <div layout:fragment="content">
+        <div class="list-group">
+            <a th:each="resource : ${resources}" th:href="${resource.url}" class="list-group-item">
+                <b th:text="${resource.name}"></b><br>
+            </a>
+        </div>
+    </div>
+
+    <div>
+        <form th:method="POST" th:action="${action}">
+            <div>
+                <label>Name:</label>
+                <input name="name">
+            </div>
+            <button type="submit" name="Submit" ></button>
+        </form>
+    </div>
+
+</body>
+</html>
