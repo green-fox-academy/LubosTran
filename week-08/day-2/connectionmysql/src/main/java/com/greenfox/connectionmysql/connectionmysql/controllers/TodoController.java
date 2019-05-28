@@ -6,9 +6,7 @@ import com.greenfox.connectionmysql.connectionmysql.repository.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -29,7 +27,7 @@ public class TodoController {
     public String list(@RequestParam(required=false)boolean isActive, Model model){
         Iterable<Todo> iterable = this.todoRepository.findAll();
         List<Todo> wasDone = StreamSupport.stream(iterable.spliterator(), false)
-                .filter(toDo -> toDo.isDone()).collect(Collectors.toList());
+                .filter(Todo::isDone).collect(Collectors.toList());
         List<Todo> notDone = StreamSupport.stream(iterable.spliterator(), false)
                 .filter(toDo -> !toDo.isDone()).collect(Collectors.toList());
 
@@ -45,5 +43,15 @@ public class TodoController {
         return "todolist";
     }
 
+    @GetMapping("/add")
+    public String addTodo(Model model){
+        model.addAttribute("add", new Todo());
+        return "addTodo";
+    }
 
+    @PostMapping("/add")
+    public String save(@ModelAttribute Todo todo){
+        todoRepository.save(todo);
+        return "redirect:/todo/list";
+    }
 }

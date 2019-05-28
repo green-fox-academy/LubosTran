@@ -30,8 +30,7 @@ public class ConnectionmysqlApplication implements CommandLineRunner {
                 new Todo("Sharpen my sword", false, true),
                 new Todo("Kill anyone who dare to cross me", true, false)
         ));
-        todoList.stream()
-                .forEach(todo -> todoRepository.save(todo));
+        todoList.forEach(todo -> todoRepository.save(todo));
 
 
     }
