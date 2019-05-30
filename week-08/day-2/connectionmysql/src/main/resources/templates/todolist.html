@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.thymeleaf.org">
-<head>
+<head >
     <meta charset="UTF-8">
+    <link href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/style.css" rel="stylesheet"/>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <title>Todo List</title>
 </head>
 <body>
-    <h1>Todos for today:</h1>
-    <a th:href="@{/todo/add}">Add new todo</a>
-    <table>
+    <h1 class="text-center">Todos for today:</h1>
+    <div class="row justify-content-center">
+        <button type="button" class="btn btn-info" th:href="@{/todo/add}">Add new todo</button><br>
+    </div>
+    <br>
+    <table class="table table-bordered table-striped table-dark">
         <tr>
-            <th>ID</th>
-            <th>ACTION</th>
-            <th>DONE</th>
-            <th>URGENT</th>
+            <th hidden scope="col">ID</th>
+            <th scope="col">ACTION</th>
+            <th scope="col">DONE</th>
+            <th scope="col">URGENT</th>
         </tr>
 
         <tr th:each=" todo : ${todos}">
-            <td th:text="${todo.id}"></td>
+            <td hidden th:text="${todo.id}"></td>
             <td th:text="${todo.title}"></td>
-            <td th:text="${todo.done}"></td>
-            <td th:text="${todo.urgent}"></td>
             <td >
-                <a th:href="@{/todo/{id}/delete(id=${todo.id})}">Delete</a>
+                <span th:class="${todo.isDone()} ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"></span>
             </td>
-            <td>
-                <a th:href="@{/todo/{id}/edit(id=${todo.id})}">Edit</a>
+            <td th:class="${todo.isUrgent()} ? 'glyphicon glyphicon-ok' :'glyphicon glyphicon-remove'"></td>
+            <td class="align-middle">
+                <button type="button" class="btn btn-danger delete-btn" th:href="@{/todo/{id}/delete(id=${todo.id})}">Delete</button>
+            </td>
+            <td >
+                <button type="button" class="btn btn-info update-btn" th:href="@{/todo/{id}/edit(id=${todo.id})}">Edit</button>
             </td>
         </tr>
     </table>
     </ul>
+
+    <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
