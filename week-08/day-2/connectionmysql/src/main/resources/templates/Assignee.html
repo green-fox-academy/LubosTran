@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head >
     <meta charset="UTF-8">
-    <title>Assignee</title>
+    <link href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/style.css" rel="stylesheet"/>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <title>Todo List</title>
 </head>
 <body>
+    <h1 class="text-center">Todos for today:</h1>
+    <form action="/todo/result">
+        <input name="searchQuery" type="text">
+        <button type="submit" value="Search">Search</button>
+    </form>
+    <a th:href="@{/todo/}" > List All Todo</a>
+    <div class="row justify-content-center">
+        <button type="button" class="btn btn-info" th:href="@{/todo/add}">Add new todo</button><br>
+    </div>
+    <br>
+
+    <table class="table table-bordered table-striped table-dark">
+        <tr>
+            <th hidden scope="col">ID</th>
+            <th scope="col">name</th>
+            <th scope="col">email</th>
+        </tr>
+
+        <tr th:each=" assignee : ${assignees}">
+            <td hidden th:text="${assignee.id}"></td>
+            <td th:text="${assignee.name}"></td>
+            <td th:text="${assignee.email}"></td>
+            <td >
+                <a type="button" class="btn btn-info update-btn" th:href="@{/todo/assignee/{id}/edit(id=${assignee.id})}">Edit</a>
+            </td>
+        </tr>
+    </table>
+    </ul>
+
+    <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+    <script src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>

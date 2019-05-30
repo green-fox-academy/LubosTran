@@ -1,6 +1,9 @@
 package com.greenfox.connectionmysql.connectionmysql.model;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name="Todo")
@@ -11,6 +14,9 @@ public class Todo {
     private String title;
     private boolean urgent = false;
     private boolean done = false;
+
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private  List<Assignee> assignee;
 
     public Todo(){}
 

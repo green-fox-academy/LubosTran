@@ -10,6 +10,6 @@ public interface TodoRepository extends CrudRepository<Todo, Long> {
 
      List<Todo> findAllByTitle (String title);
 
-     @Query( "SELECT t FROM Todo t WHERE t.title LIKE ?1%")
+     @Query( "SELECT t FROM Todo t WHERE t.title LIKE %:text%")
     List<Todo> findTodoLikeText (@Param("text") String wutever);
 }

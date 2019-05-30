@@ -1,7 +1,9 @@
 package com.greenfox.connectionmysql.connectionmysql.controllers;
 
 
+import com.greenfox.connectionmysql.connectionmysql.model.Assignee;
 import com.greenfox.connectionmysql.connectionmysql.model.Todo;
+import com.greenfox.connectionmysql.connectionmysql.repository.AssigneeRepository;
 import com.greenfox.connectionmysql.connectionmysql.repository.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,10 +21,12 @@ import java.util.stream.StreamSupport;
 public class TodoController {
 
     private TodoRepository todoRepository;
+    private AssigneeRepository assigneeRepository;
 
     @Autowired
-    TodoController(TodoRepository todoRepository){
+    TodoController(TodoRepository todoRepository, AssigneeRepository assigneeRepository){
         this.todoRepository = todoRepository;
+        this.assigneeRepository = assigneeRepository;
     }
 
     @GetMapping({"/", "/list"})
@@ -86,7 +90,24 @@ public class TodoController {
     public String Search(@RequestParam String searchQuery, Model model){
         List<Todo> add = todoRepository.findTodoLikeText(searchQuery);
         model.addAttribute("todos",add);
-
         return "todolist";
+    }
+
+    @GetMapping("/assignee")
+    public String assigneeList(Model model){
+        model.addAttribute("assignees", assigneeRepository.findAll());
+        return "Assignee";
+    }
+    @RequestMapping(method = RequestMethod.GET, value = "/assignee/{id}/edit")
+    public String editAssignee(@PathVariable long id, Model model){
+        model.addAttribute("editA", assigneeRepository.findById(id).get());
+        return "editA";
+    }
+
+    @RequestMapping(method = RequestMethod.POST, value = "/assignee/{id}/edit")
+    public String editAssignee(@PathVariable Long id, @ModelAttribute Assignee assignee){
+        assignee.setId(id);
+        assigneeRepository.findById(id).map(todo1 -> assigneeRepository.save(assignee));
+        return "redirect:/todo/assignee";
     }
 }

@@ -13,6 +13,7 @@
         <input name="searchQuery" type="text">
         <button type="submit" value="Search">Search</button>
     </form>
+    <a th:href="@{/todo/assignee}" > List All Assignees</a>
     <div class="row justify-content-center">
         <button type="button" class="btn btn-info" th:href="@{/todo/add}">Add new todo</button><br>
     </div>
@@ -34,10 +35,12 @@
             </td>
             <td th:class="${todo.isUrgent()} ? 'glyphicon glyphicon-ok' :'glyphicon glyphicon-remove'"></td>
             <td class="align-middle">
-                <button type="button" class="btn btn-danger delete-btn" th:href="@{/todo/{id}/delete(id=${todo.id})}">Delete</button>
+                <a type="button" class="btn btn-danger delete-btn" th:href="@{/todo/{id}/delete(id=${todo.id})}">Delete</a>
             </td>
+
+
             <td >
-                <button type="button" class="btn btn-info update-btn" th:href="@{/todo/{id}/edit(id=${todo.id})}">Edit</button>
+                <a type="button" class="btn btn-info update-btn" th:href="@{/todo/{id}/edit(id=${todo.id})}">Edit</a>
             </td>
         </tr>
     </table>
