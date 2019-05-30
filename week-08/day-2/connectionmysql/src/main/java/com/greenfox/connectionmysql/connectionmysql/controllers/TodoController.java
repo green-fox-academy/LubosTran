@@ -81,4 +81,12 @@ public class TodoController {
         todoRepository.findById(id).map(todo1 -> todoRepository.save(todo));
         return "redirect:/todo/list";
     }
+
+    @GetMapping("/result")
+    public String Search(@RequestParam String searchQuery, Model model){
+        List<Todo> add = todoRepository.findTodoLikeText(searchQuery);
+        model.addAttribute("todos",add);
+
+        return "todolist";
+    }
 }

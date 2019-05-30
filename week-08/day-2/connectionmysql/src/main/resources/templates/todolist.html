@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
 <head >
     <meta charset="UTF-8">
     <link href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
@@ -9,10 +9,15 @@
 </head>
 <body>
     <h1 class="text-center">Todos for today:</h1>
+    <form action="/todo/result">
+        <input name="searchQuery" type="text">
+        <button type="submit" value="Search">Search</button>
+    </form>
     <div class="row justify-content-center">
         <button type="button" class="btn btn-info" th:href="@{/todo/add}">Add new todo</button><br>
     </div>
     <br>
+
     <table class="table table-bordered table-striped table-dark">
         <tr>
             <th hidden scope="col">ID</th>
