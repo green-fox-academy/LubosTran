@@ -15,13 +15,12 @@ public class Todo {
     private boolean urgent = false;
     private boolean done = false;
 
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private  List<Assignee> assignee;
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Assignee assignee;
 
     public Todo(){}
 
     public Todo(String title, boolean urgent, boolean done) {
-        this.id = id;
         this.title = title;
         this.urgent = urgent;
         this.done = done;
@@ -29,7 +28,17 @@ public class Todo {
 
     @Override
     public String toString() {
-        return "Do this: " + title;
+        return "Todo{" +
+                "assignee=" + assignee +
+                '}';
+    }
+
+    public Assignee getAssignee() {
+        return assignee;
+    }
+
+    public void setAssignee(Assignee assignee) {
+        this.assignee = assignee;
     }
 
     public Long getId() {

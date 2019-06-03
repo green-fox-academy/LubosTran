@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Reddit</title>
+</head>
+<body>
+    <a href="/submit" >Submit new post</a>
+    <h1>Trending posts</h1>
+    <ul th:each="post : ${listPost}">
+        <li><a th:text="*{post.headline}" th:href="*{post.url}"></a></li>
+    </ul>
+    <div th:if="${addPost}">
+        <h2>Submit a new post</h2>
+        <form action="/submit" method="POST" th:object="${addPost}">
+            Title: <input th:type="text" th:field="*{headline}">
+            URL: <input th:type="text" th:field="*{url}">
+            <button type="submit" value="Submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

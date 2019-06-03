@@ -15,7 +15,7 @@
     </form>
     <a th:href="@{/todo/}" > List All Todo</a>
     <div class="row justify-content-center">
-        <button type="button" class="btn btn-info" th:href="@{/todo/add}">Add new todo</button><br>
+        <a type="button" class="btn btn-info" th:href="@{/todo/assignee/add}">Add a new assignee</a><br>
     </div>
     <br>
 
@@ -26,16 +26,24 @@
             <th scope="col">email</th>
         </tr>
 
-        <tr th:each=" assignee : ${assignees}">
+        <tr th:each=" assignee : ${assignees}" th:if="${assignees}">
             <td hidden th:text="${assignee.id}"></td>
             <td th:text="${assignee.name}"></td>
             <td th:text="${assignee.email}"></td>
             <td >
                 <a type="button" class="btn btn-info update-btn" th:href="@{/todo/assignee/{id}/edit(id=${assignee.id})}">Edit</a>
             </td>
+            <td>
+                <a type="button" class="btn btn-danger delete-btn" th:href="@{/todo/assignee/{id}/delete(id=${assignee.id})}">Delete</a>
+            </td>
         </tr>
     </table>
-    </ul>
+
+    <form action="/todo/assignee/add" method="POST" th:object="${addAssignee}" th:if="${addAssignee}">
+       Name :  <input type="text" th:field="*{name}" ><br>
+       Email : <input type="text" th:field="*{email}" ><br>
+        <input type="submit" value="Submit">
+    </form>
 
     <script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
     <script src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>

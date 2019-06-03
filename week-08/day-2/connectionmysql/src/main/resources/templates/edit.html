@@ -6,8 +6,11 @@
 </head>
 <body>
     <h1>Edit Todo</h1>
-    <form th:action="@{/todo/{id}/edit(id=${edit.id})}" method="POST" th:object="${edit}">
+    <form th:action="@{/todo/{id}/edit(id=${edit.id})}" method="POST" th:object="${edit} ">
         Todo Description<input type="text" th:field="*{title}"><br>
+        <select th:field="*{assignee}">
+            <option th:each="assignee : ${assignees}" th:text="${assignee.name}" th:value="${assignee.id}"></option>
+        </select>
         Urgent<input type="checkbox" th:field="*{urgent}"><br>
         Done<input type="checkbox" th:field="*{done}" checked><br>
         <input type="submit" value="Submit">

@@ -1,6 +1,7 @@
 package com.greenfox.connectionmysql.connectionmysql.model;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "Assignee")
@@ -10,12 +11,23 @@ public class Assignee {
     private String name;
     private String email;
 
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<Todo> todoList;
+
+
     public Assignee (){}
 
     public Assignee(String name, String email) {
-        this.id = id;
         this.name = name;
         this.email = email;
+    }
+
+    public List<Todo> getTodoList() {
+        return todoList;
+    }
+
+    public void setTodoList(List<Todo> todoList) {
+        this.todoList = todoList;
     }
 
     public Long getId() {
@@ -26,19 +38,19 @@ public class Assignee {
         this.id = id;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 }

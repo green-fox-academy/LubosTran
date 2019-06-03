@@ -15,7 +15,7 @@
     </form>
     <a th:href="@{/todo/assignee}" > List All Assignees</a>
     <div class="row justify-content-center">
-        <button type="button" class="btn btn-info" th:href="@{/todo/add}">Add new todo</button><br>
+        <a type="button" class="btn btn-info" th:href="@{/todo/add}">Add new todo</a><br>
     </div>
     <br>
 
@@ -25,6 +25,7 @@
             <th scope="col">ACTION</th>
             <th scope="col">DONE</th>
             <th scope="col">URGENT</th>
+            <th scope="col">Assigned By</th>
         </tr>
 
         <tr th:each=" todo : ${todos}">
@@ -34,6 +35,7 @@
                 <span th:class="${todo.isDone()} ? 'glyphicon glyphicon-ok' : 'glyphicon glyphicon-remove'"></span>
             </td>
             <td th:class="${todo.isUrgent()} ? 'glyphicon glyphicon-ok' :'glyphicon glyphicon-remove'"></td>
+            <td th:text="${todo.assignee.name}"></td>
             <td class="align-middle">
                 <a type="button" class="btn btn-danger delete-btn" th:href="@{/todo/{id}/delete(id=${todo.id})}">Delete</a>
             </td>

@@ -63,6 +63,7 @@ public class TodoController {
 
     @PostMapping("/add")
     public String save(@ModelAttribute Todo todo){
+
         todoRepository.save(todo);
         return "redirect:/todo/list";
     }
@@ -74,15 +75,15 @@ public class TodoController {
     }
 
     @RequestMapping(method = RequestMethod.GET, value = "/{id}/edit")
-    public String editTodo(@PathVariable long id, Model model){
+    public String editTodo(@PathVariable long id, Model model, @ModelAttribute Assignee assignee){
         model.addAttribute("edit", todoRepository.findById(id).get());
+        model.addAttribute("assignees", assigneeRepository.findAll());
         return "edit";
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/{id}/edit")
     public String editTodo(@PathVariable Long id, @ModelAttribute Todo todo){
-        todo.setId(id);
-        todoRepository.findById(id).map(todo1 -> todoRepository.save(todo));
+        todoRepository.save(todo);
         return "redirect:/todo/list";
     }
 
@@ -93,6 +94,8 @@ public class TodoController {
         return "todolist";
     }
 
+
+    //Assignee
     @GetMapping("/assignee")
     public String assigneeList(Model model){
         model.addAttribute("assignees", assigneeRepository.findAll());
@@ -107,7 +110,27 @@ public class TodoController {
     @RequestMapping(method = RequestMethod.POST, value = "/assignee/{id}/edit")
     public String editAssignee(@PathVariable Long id, @ModelAttribute Assignee assignee){
         assignee.setId(id);
-        assigneeRepository.findById(id).map(todo1 -> assigneeRepository.save(assignee));
+        assigneeRepository.save(assignee);
         return "redirect:/todo/assignee";
     }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/assignee/{id}/delete")
+    public String deleteAssignee(@PathVariable long id){
+        assigneeRepository.deleteById(id);
+        return "redirect:/todo/assignee";
+    }
+
+    @GetMapping("/assignee/add")
+    public String addA(Model model){
+        model.addAttribute("addAssignee", new Assignee());
+        return "Assignee";
+    }
+
+    @PostMapping("/assignee/add")
+    public String save(@ModelAttribute Assignee assignee, Model model){
+        assigneeRepository.save(assignee);
+        model.addAttribute("addAssignee", assignee);
+        return "redirect:/todo/assignee";
+    }
+
 }
