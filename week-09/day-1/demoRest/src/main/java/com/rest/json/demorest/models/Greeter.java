@@ -1,8 +1,8 @@
 package com.rest.json.demorest.models;
 
 public class Greeter {
-    private String name;
-    private String title;
+    private String name ;
+    private String title ;
 
     public Greeter() {
     }
